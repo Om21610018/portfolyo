@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
-import { techStack } from "../data/data";
 import { useContext } from "react";
 import MyContext from "../context/MyContext";
 

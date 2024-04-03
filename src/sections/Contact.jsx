@@ -5,7 +5,6 @@ import { motion, useInView } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Buttons from "../components/Buttons";
 import InsightCard from "../components/InsightCard";
-import { insights } from "../data/data";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
@@ -65,7 +64,6 @@ const Contact = () => {
           variants={fadeIn("right", "tween", 0.2, 1)}
           className="w-full h-full flex flex-col justify-start p-4 rounded-[32px] relative border-[1px] border-[#6A6A6A]"
         >
-          
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -73,15 +71,7 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.25 }}
             className={"w-full last:mx-auto flex flex-col justify-between"}
           >
-            <div className="flex flex-col gap-5 lg:gap-[15px]">
-              {insights.map((item, index) => (
-                <InsightCard
-                  key={`insight-${index}`}
-                  {...item}
-                  index={index + 1}
-                />
-              ))}
-            </div>
+          
           </motion.div>
         </motion.div>
         <div className="relative w-full h-full flex flex-col justify-center items-center">
