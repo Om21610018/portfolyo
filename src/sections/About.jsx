@@ -14,7 +14,6 @@ const About = () => {
         <p className="text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline">
           About
         </p>
-       
       </div>
       <motion.div
         variants={staggerContainer}
@@ -43,7 +42,7 @@ const About = () => {
           className="w-full -scroll-ml-52 lg:h-[610px] overflow-y-auto h-auto flex-1 flex flex-col lg:justify-between gap-3 lg:gap-4 sm:p-8 xl:p-12 p-4 rounded-[32px] relative border-[1px] border-dark-grey scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
         >
           {data?.services?.map((service, index) => (
-            <div className="flex justify-center">
+            <div key={index} className="flex justify-center">
               <div
                 className="xs:w-full  border-white
                  border-2  sm:w-5/6 rounded-lg py-3 px-3 hover:bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-800"

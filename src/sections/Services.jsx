@@ -5,7 +5,7 @@ import MyContext from "../context/MyContext";
 
 const Services = () => {
   const { data } = useContext(MyContext);
-  console.log(data);
+  // console.log(data);
   return (
     <section name="services" className="section ">
       <motion.div

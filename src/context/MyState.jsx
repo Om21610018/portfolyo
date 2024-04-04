@@ -15,7 +15,7 @@ function MyState({ children }) {
       setLoading(false);
       setData(res.data.user);
       // Use res.data to set the data state
-      console.log(res.data);
+      // console.log(res.data);
     } catch (error) {
       console.log(error);
       setLoading(false);

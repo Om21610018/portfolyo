@@ -63,8 +63,12 @@ const Experience = () => {
   const { data } = useContext(MyContext);
   return (
     <>
-      <motion.div name="experience" variants={textVariant()}>
-        <p className="text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline">
+      <motion.div
+        name="experience"
+        className="section w-full"
+        variants={textVariant()}
+      >
+        <p className="text-2xl lg:text-4xl font-bold border-b-4  border-yellow p-2 inline">
           Experience
         </p>
       </motion.div>

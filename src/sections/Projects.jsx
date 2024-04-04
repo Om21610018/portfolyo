@@ -19,7 +19,7 @@ const Projects = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.25 }}
       >
         <div className="mb-14">
           <p className="text-2xl lg:text-4xl font-bold border-b-4 border-yellow p-2 inline">
@@ -27,7 +27,7 @@ const Projects = () => {
           </p>
         </div>
         <motion.div
-          // variants={fadeIn("up", "tween", 0.2, 1)}
+          // variants={fadeIn("up", "spring", 0.2, 1)}
           className="container Projects__container "
         >
           {data?.projects?.map((p, index) => {
@@ -40,7 +40,7 @@ const Projects = () => {
                   <img src={p?.image?.url} alt="" />
                 </div>
                 <h3 className=" font-semibold text-xl">{p?.title}</h3>
-                <div className="Projects__item-cta">
+                <div className="Projects__item-cta linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,0.7694607843137255) 100%)">
                   <a href={p?.githuburl} className="btn" target="_blank">
                     Github
                   </a>

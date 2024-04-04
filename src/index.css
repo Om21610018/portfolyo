@@ -64,7 +64,8 @@
   }
 
   .btn {
-    @apply py-3 px-5 bg-yellow text-secondary text-lg lg:text-xl font-bold flex items-center justify-center rounded-lg hover:bg-amber-500 focus:scale-105 transition-all;
+    @apply py-3 px-5 bg-secondary text-white border
+     border-gray-500 text-lg lg:text-xl font-bold flex  hover:text-white duration-500 items-center justify-center rounded-lg hover:bg-gradient-to-r hover:from-blue hover:to-red focus:scale-105 transition-all;
   }
 
   .contactInput {
@@ -88,117 +89,117 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-
 /* @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap"); */
 
-*, body {
-	margin: 0px;
-	padding: 0px;
+*,
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 .testimonial {
-	text-align: center;
-	background-color: inherit;
+  text-align: center;
+  background-color: inherit;
 }
 
 .testimonial .content {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-	box-shadow: 2px 4px 10px white;
-	background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 10px white;
+  background-color: white;
 }
 
 .testimonial .content img {
-	border-radius: 50%;
-	line-height: 50%;
-	float: left;
-	margin-left: 50px;
+  border-radius: 50%;
+  line-height: 50%;
+  float: left;
+  margin-left: 50px;
 }
 
 .testimonial .content p {
-	float: right;
-	font-weight: bold;
+  float: right;
+  font-weight: bold;
 }
 
 .testimonial .content p::before {
-	content: '-';
+  content: "-";
 }
 
 .testimonial .content span {
-	font-family: 'Montserrat', sans-serif;
-	display: block;
-	padding: 15px;
-	font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  padding: 15px;
+  font-size: 15px;
 }
 
 .testimonial .content span::before {
-	display: block;
-	padding-left: 10px;
-	content: "\201C";
-	font-size: 80px;
-	position: absolute;
-	left: 0px;
-	top: -10px;
-	color: black;
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  color: black;
 }
 
 @-webkit-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
+  from {
+    opacity: 0;
+  }
 
-	to {
-		opacity: 1;
-	}
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
+  from {
+    opacity: 0;
+  }
 
-	to {
-		opacity: 1;
-	}
+  to {
+    opacity: 1;
+  }
 }
 
 .fadeIn {
-	-webkit-animation-name: fadeIn;
-	animation-name: fadeIn;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes slideOutLeft {
-	from {
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-	to {
-		visibility: hidden;
-		-webkit-transform: translate3d(-100%, 0, 0);
-		transform: translate3d(-100%, 0, 0);
-	}
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 
 @keyframes slideOutLeft {
-	from {
-		-webkit-transform: translateX(0px);
-		transform: translateX(0px);
-	}
+  from {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
 
-	to {
-		visibility: hidden;
-		-webkit-transform: translateX(-1000px);
-		transform: translateX(-1000px);
-	}
+  to {
+    visibility: hidden;
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
 }
 
 .slideOutLeft {
-	-webkit-animation-name: slideOutLeft;
-	animation-name: slideOutLeft;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }

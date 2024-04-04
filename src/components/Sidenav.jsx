@@ -18,7 +18,7 @@ const Sidenav = () => {
           activeClass="active"
           smooth={true}
           spy={true}
-          duration={500}
+          duration={100}
           className="icons link"
         >
           <HiHome />
@@ -28,7 +28,7 @@ const Sidenav = () => {
           activeClass="active"
           smooth={true}
           spy={true}
-          duration={500}
+          duration={100}
           className="icons link"
         >
           <HiUser />
@@ -38,7 +38,7 @@ const Sidenav = () => {
           activeClass="active"
           smooth={true}
           spy={true}
-          duration={500}
+          duration={100}
           className="icons link"
         >
           <HiViewColumns />
@@ -48,7 +48,7 @@ const Sidenav = () => {
           activeClass="active"
           smooth={true}
           spy={true}
-          duration={500}
+          duration={100}
           className="icons link"
         >
           <HiRectangleGroup />
@@ -58,7 +58,7 @@ const Sidenav = () => {
           activeClass="active"
           smooth={true}
           spy={true}
-          duration={500}
+          duration={100}
           className="icons link"
         >
           <HiAcademicCap />
@@ -68,7 +68,7 @@ const Sidenav = () => {
           activeClass="active"
           smooth={true}
           spy={true}
-          duration={500}
+          duration={100}
           className="icons link"
         >
           <HiUserGroup />
@@ -78,7 +78,7 @@ const Sidenav = () => {
           activeClass="active"
           smooth={true}
           spy={true}
-          duration={500}
+          duration={100}
           className="icons link"
         >
           <HiEnvelope />
